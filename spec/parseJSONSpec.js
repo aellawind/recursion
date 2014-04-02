@@ -9,12 +9,12 @@ describe("parseJSON", function(){
     });
 
     // if you really want to stress test your code, try this...
-    // extraCreditStrings.forEach(function(string){
-    //   var expected = JSON.parse(string);
-    //   var result = parseJSON(string);
-    //   var equality = _.isEqual(result, expected);
-    //   expect(equality).toBeTruthy();
-    // });
+     extraCreditStrings.forEach(function(string){
+       var expected = JSON.parse(string);
+       var result = parseJSON(string);
+       var equality = _.isEqual(result, expected);
+       expect(equality).toBeTruthy();
+     });
   });
 
   it("should error out sometimes", function(){
